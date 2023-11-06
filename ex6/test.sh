@@ -14,11 +14,11 @@ for i in  $( seq _____ ); do
 	test_out="./testcases/output/$1-$i.out"
 	tmp_output="./testcases/tmp_output/"$1"-"$i".out"
 	if [ -e "$test_in" ]; then
-		# run the program
+		# run the program, input from test_in, output to tmp_output
 		./"$1" ___________________
 
-		# use diff to compare the output
-		if _____________ > /dev/null; then
+		# use diff to compare the output and redirect the unwanted output to /dev/null
+		if diff -q "$tmp_output" "$test_out" _____________; then
 			echo "Test $test_case passed"
 		else
 			echo "Test $test_case failed"
