@@ -6,7 +6,7 @@ if [ $# -eq 0 ]; then
 fi 
 
 # Create the directory if it doesn't exist
-___________________________
+[ _______ ] || _______________
 
 # Move the files
 _____________
