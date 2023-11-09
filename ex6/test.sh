@@ -16,7 +16,7 @@ for i in  $( seq _____ ); do
 	if [ -e "$test_in" ]; then
 		# run the program, input from test_in, output to tmp_output
 		./"$1" ___________________
-
+		test_case=$1-$i
 		# use diff to compare the output and redirect the unwanted output to /dev/null
 		if diff -q "$tmp_output" "$test_out" _____________; then
 			echo "Test $test_case passed"
